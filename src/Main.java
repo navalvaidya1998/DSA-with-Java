@@ -1,4 +1,5 @@
 import arrays.LargestElement;
+import arrays.MedianOfTwoSortedArraysBruteForceApproach;
 import arrays.TwoSum;
 
 public class Main {
@@ -11,8 +12,18 @@ public class Main {
         //Day 1: TwoSum
         int[] arr1 = {2, 7, 11, 15};
         int target = 26;
-        TwoSum twoSumSolver = new TwoSum();
-        int[] getTwoSumResult = twoSumSolver.twoSum(arr1, target);
-        System.out.println("Day 1 - TwoSum output ==> Indices: " + getTwoSumResult[0] + ", " + getTwoSumResult[1]);
+        int[] result1 = TwoSum.twoSum(arr1, target);
+        if (result1 != null) {
+            System.out.println("Day 1 - TwoSum ==> Indices: " + result1[0] + ", " + result1[1]);
+        } else {
+            System.out.println("No valid pair found");
+        }
+        //Day 1: MedianOfTwoSortedArraysBruteForceApproach
+        int[] arr2 = {1, 3, 5};
+        int[] arr3 = {2, 4, 6};
+        double median = MedianOfTwoSortedArraysBruteForceApproach.findMedianOf2SortedArrays(arr2, arr3);
+        System.out.println("Day 1 - MedianOfTwoSortedArraysBruteForceApproach ==> Median: " + median);
+        //---------------------------------------------------
+
     }
 }
