@@ -1,5 +1,5 @@
 import arrays.LargestElement;
-import arrays.MedianOfTwoSortedArraysBruteForceApproach;
+import arrays.MedianOfTwoSortedArrays;
 import arrays.TwoSum;
 
 public class Main {
@@ -18,11 +18,13 @@ public class Main {
         } else {
             System.out.println("No valid pair found");
         }
-        //Day 1: MedianOfTwoSortedArraysBruteForceApproach
+        //Day 1: MedianOfTwoSortedArrays with BruteForce and Better Approach
         int[] arr2 = {1, 3, 5};
         int[] arr3 = {2, 4, 6};
-        double median = MedianOfTwoSortedArraysBruteForceApproach.findMedianOf2SortedArrays(arr2, arr3);
-        System.out.println("Day 1 - MedianOfTwoSortedArraysBruteForceApproach ==> Median: " + median);
+        double median = MedianOfTwoSortedArrays.bruteForce(arr2, arr3);
+        System.out.println("Day 1 - MedianOfTwoSortedArraysBruteForceApproach ==> Median (Brute Force Approach): " + median);
+        double median1 = MedianOfTwoSortedArrays.bruteForce(arr2, arr3);
+        System.out.println("Day 1 - MedianOfTwoSortedArraysBruteForceApproach ==> Median (Better Approach): " + median1);
         //---------------------------------------------------
 
     }
