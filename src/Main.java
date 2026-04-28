@@ -1,3 +1,4 @@
+import arrays.ContainerWithMostWater;
 import arrays.LargestElement;
 import arrays.MedianOfTwoSortedArrays;
 import arrays.TwoSum;
@@ -26,6 +27,13 @@ public class Main {
         double median1 = MedianOfTwoSortedArrays.bruteForce(arr2, arr3);
         System.out.println("Day 1 - MedianOfTwoSortedArraysBruteForceApproach ==> Median (Better Approach): " + median1);
         //---------------------------------------------------
+        
+        //Day 2: ContainerWithMostWater with BruteForce and Two Pointer Approach
+        int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        int maxWater = ContainerWithMostWater.maxWater(height);
+        int maxWater1 = ContainerWithMostWater.maxWater1(height);
+        System.out.println("Day 2 - ContainerWithMostWater ==> Maximum Water (Brute Force): " + maxWater);
+        System.out.println("Day 2 - ContainerWithMostWater ==> Maximum Water (Two Pointer Approach): " + maxWater1);
 
     }
 }
