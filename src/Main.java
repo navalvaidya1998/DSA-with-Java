@@ -1,6 +1,7 @@
 import java.util.List;
 
 import arrays.ContainerWithMostWater;
+import arrays.FourSum;
 import arrays.LargestElement;
 import arrays.LongestCommonPrefix;
 import arrays.MedianOfTwoSortedArrays;
@@ -56,6 +57,16 @@ public class Main {
         System.out.println("Day 3 - ThreeSum ==> Triplets that sum to zero (Better Approach): " + tripletes1);
         System.out.println("Day 3 - ThreeSum ==> Triplets that sum to zero (Better Approach): " + tripletes2);
 
+        //Day 3: FourSum with Brute Force,Better and Optimal Approach(Two Pointer)
+        int[] arr5 = {2,1,2,-1,-1,0,-4,3,4,-2,-1,1,2,3};
+        int target1 = 3; 
+        List<List<Integer>> quadruplets = FourSum.fourSumBruteForce(arr5, target1);
+        List<List<Integer>> quadruplets1 = FourSum.fourSumBetterApproach(arr5, target1);
+        List<List<Integer>> quadruplets2 = FourSum.fourSumOptimalApproach(arr5, target1);
+        System.out.println("Day 3 - FourSum ==> Quadruplets that sum to target (Brute Force): " + quadruplets);
+        System.out.println("Day 3 - FourSum ==> Quadruplets that sum to target (Better Approach): " + quadruplets1);
+        System.out.println("Day 3 - FourSum ==> Quadruplets that sum to target (Optimal Approach): " + quadruplets2);
+        //--------------------------------------------------------------------------------------
 
 
 
