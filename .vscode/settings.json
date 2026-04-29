@@ -6,5 +6,6 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    "java.dependency.syncWithFolderExplorer": true
+    "java.dependency.syncWithFolderExplorer": true,
+    "editor.suggest.selectionMode": "never"
 }

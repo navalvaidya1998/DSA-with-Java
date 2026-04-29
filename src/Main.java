@@ -1,7 +1,10 @@
+import java.util.List;
+
 import arrays.ContainerWithMostWater;
 import arrays.LargestElement;
 import arrays.LongestCommonPrefix;
 import arrays.MedianOfTwoSortedArrays;
+import arrays.ThreeSum;
 import arrays.TwoSum;
 
 public class Main {
@@ -35,12 +38,26 @@ public class Main {
         int maxWater1 = ContainerWithMostWater.maxWater1(height);
         System.out.println("Day 2 - ContainerWithMostWater ==> Maximum Water (Brute Force): " + maxWater);
         System.out.println("Day 2 - ContainerWithMostWater ==> Maximum Water (Two Pointer Approach): " + maxWater1);
-        
+
         //Day 2: LongestCommonPrefix with Horizontal and Vertical Scanning Approach
         String[] strs = {"BandWidth", "Band", "Banana"};
         String prefix = LongestCommonPrefix.longestCommonPrefixHorizontal(strs);
         System.out.println("Day 2 - LongestCommonPrefix ==> Longest Common Prefix (Horizontal Scanning): " + prefix);
         String prefix1 = LongestCommonPrefix.longestCommonPrefixVertical(strs);
         System.out.println("Day 2 - LongestCommonPrefix ==> Longest Common Prefix (Vertical Scanning): " + prefix1);
+        //---------------------------------------------------
+
+        //Day 3: ThreeSum with Brute Force, Better Approach and Optimal Approach(Two Pointer)
+        int[] arr4 = { 1, 2, 3, -3, -1, -2, 0, 0, 1, 4, -4, -4};
+        List<List<Integer>> tripletes = ThreeSum.threeSumBruteForce(arr4);
+        List<List<Integer>> tripletes1 = ThreeSum.threeSumBetterApproach(arr4);
+        List<List<Integer>> tripletes2 = ThreeSum.threeSumOptimalApproach(arr4);
+        System.out.println("Day 3 - ThreeSum ==> Triplets that sum to zero (Brute Force): " + tripletes);
+        System.out.println("Day 3 - ThreeSum ==> Triplets that sum to zero (Better Approach): " + tripletes1);
+        System.out.println("Day 3 - ThreeSum ==> Triplets that sum to zero (Better Approach): " + tripletes2);
+
+
+
+
     }
 }
