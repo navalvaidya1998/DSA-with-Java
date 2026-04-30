@@ -74,10 +74,17 @@ public class Main {
         int target2 = 15;
         int checkClosest = ThreeSumClosest.threeSumClosestBruteForce(arr6,target2);
         System.out.println("Day 4 - ThreeSumClosest ==> Closest sum to target (Brute Force): " + checkClosest);
-        int checkClosest1 = ThreeSumClosest.threeSumClosestBetterApproach(arr6,target2);
+        int checkClosest1 = ThreeSumClosest.threeSumClosestOptimalApproach(arr6,target2);
         System.out.println("Day 4 - ThreeSumClosest ==> Closest sum to target (Optimal Approach): " + checkClosest1);
 
-
+        //Day 4: RemoveDuplicatesFromSortedArray with Two Pointer Approach
+        int[] arr7 = {1,1,1,2,2,3,4,4,5,5,6};
+        int[] copy1 = arr7.clone();
+        int[] copy2 = arr7.clone();
+        int newLength = arrays.RemoveDuplicatesFromSortedArray.removeDuplicatesBruteForce(copy1);
+        int newLength1 = arrays.RemoveDuplicatesFromSortedArray.removeDuplicatesOptimal(copy2);
+        System.out.println("Day 4 - RemoveDuplicatesFromSortedArray ==> New Length (Brute Force Approach): " + newLength);
+        System.out.println("Day 4 - RemoveDuplicatesFromSortedArray ==> New Length (Two Pointer Approach): " + newLength1);
 
     }
 }

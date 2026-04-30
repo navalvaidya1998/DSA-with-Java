@@ -75,7 +75,7 @@ public class ThreeSumClosest {
     * - Requires sorting (slight overhead)
     */
 
-    public static int threeSumClosestBetterApproach(int[] arr,int target){
+    public static int threeSumClosestOptimalApproach(int[] arr,int target){
         int n=arr.length;
         Arrays.sort(arr);
         int closest=arr[0]+arr[1]+arr[2];
