@@ -6,6 +6,7 @@ import arrays.LargestElement;
 import arrays.LongestCommonPrefix;
 import arrays.MedianOfTwoSortedArrays;
 import arrays.ThreeSum;
+import arrays.ThreeSumClosest;
 import arrays.TwoSum;
 
 public class Main {
@@ -67,6 +68,14 @@ public class Main {
         System.out.println("Day 3 - FourSum ==> Quadruplets that sum to target (Better Approach): " + quadruplets1);
         System.out.println("Day 3 - FourSum ==> Quadruplets that sum to target (Optimal Approach): " + quadruplets2);
         //--------------------------------------------------------------------------------------
+
+        //Day 4: ThreeSumClosest with Brute Force and Optimal Approach 
+        int[] arr6 = {1,3,-2,-3,1,0,3,5,2,-1,-2,0};
+        int target2 = 15;
+        int checkClosest = ThreeSumClosest.threeSumClosestBruteForce(arr6,target2);
+        System.out.println("Day 4 - ThreeSumClosest ==> Closest sum to target (Brute Force): " + checkClosest);
+        int checkClosest1 = ThreeSumClosest.threeSumClosestBetterApproach(arr6,target2);
+        System.out.println("Day 4 - ThreeSumClosest ==> Closest sum to target (Optimal Approach): " + checkClosest1);
 
 
 
