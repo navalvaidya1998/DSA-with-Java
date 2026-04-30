@@ -1,5 +1,3 @@
-import java.util.List;
-
 import arrays.ContainerWithMostWater;
 import arrays.FourSum;
 import arrays.LargestElement;
@@ -8,7 +6,7 @@ import arrays.MedianOfTwoSortedArrays;
 import arrays.ThreeSum;
 import arrays.ThreeSumClosest;
 import arrays.TwoSum;
-
+import java.util.List;
 public class Main {
     public static void main(String[] args) {
         //Sample example------------------------------------
@@ -77,7 +75,7 @@ public class Main {
         int checkClosest1 = ThreeSumClosest.threeSumClosestOptimalApproach(arr6,target2);
         System.out.println("Day 4 - ThreeSumClosest ==> Closest sum to target (Optimal Approach): " + checkClosest1);
 
-        //Day 4: RemoveDuplicatesFromSortedArray with Two Pointer Approach
+        //Day 4: RemoveDuplicatesFromSortedArray with BruteForce and Two Pointer Approach 
         int[] arr7 = {1,1,1,2,2,3,4,4,5,5,6};
         int[] copy1 = arr7.clone();
         int[] copy2 = arr7.clone();
@@ -85,6 +83,17 @@ public class Main {
         int newLength1 = arrays.RemoveDuplicatesFromSortedArray.removeDuplicatesOptimal(copy2);
         System.out.println("Day 4 - RemoveDuplicatesFromSortedArray ==> New Length (Brute Force Approach): " + newLength);
         System.out.println("Day 4 - RemoveDuplicatesFromSortedArray ==> New Length (Two Pointer Approach): " + newLength1);
+
+        //Day 4: RemoveElement with Two Pointer and Swap Approach
+        int[] arr8 = {1,1,3,2,2,3,4,5,3,6,7,3};
+        int target3 = 3;   
+        int[] copy3 = arr8.clone();
+        int[] copy4 = arr8.clone();
+        int newLength2 = arrays.RemoveElement.removeElementOptimal(copy3, target3);
+        int newLength3 = arrays.RemoveElement.removeElementSwap(copy4, target3);
+        System.out.println("Day 4 - RemoveElement ==> New Length (Two Pointer Approach): " + newLength2);
+        System.out.println("Day 4 - RemoveElement ==> New Length (Swap Approach): " + newLength3);
+        //--------------------------------------------------------------------------------------
 
     }
 }
