@@ -100,6 +100,13 @@ public class Main {
         System.out.println("Day 5 - NextPermutation ==> Original Array: " + java.util.Arrays.toString(arr9));
         arrays.NextPermutation.nextPermutation(arr9);
         System.out.println("Day 5 - NextPermutation ==> Next Permutation: " + java.util.Arrays.toString(arr9));
-
+        
+        //Day 5: SearchinRotatedSortedArray with Brute Force and Optimal Approach
+        int[] arr10 = {4,5,6,7,0,1,2};
+        int target4 = 0;
+        int searchResult = arrays.SearchinRotatedSortedArray.searchinRotatedSortedArrayBruteForce(arr10, target4);
+        int searchResult1 = arrays.SearchinRotatedSortedArray.searchinRotatedSortedArrayOptimal(arr10, target4);
+        System.out.println("Day 5 - SearchinRotatedSortedArray ==> Index of target (Brute Force): " + searchResult);
+        System.out.println("Day 5 - SearchinRotatedSortedArray ==> Index of target (Optimal Approach): " + searchResult1);
     }
 }
