@@ -95,5 +95,11 @@ public class Main {
         System.out.println("Day 4 - RemoveElement ==> New Length (Swap Approach): " + newLength3);
         //--------------------------------------------------------------------------------------
 
+        //Day 5: NextPermutation
+        int[] arr9 = {1,2,3};
+        System.out.println("Day 5 - NextPermutation ==> Original Array: " + java.util.Arrays.toString(arr9));
+        arrays.NextPermutation.nextPermutation(arr9);
+        System.out.println("Day 5 - NextPermutation ==> Next Permutation: " + java.util.Arrays.toString(arr9));
+
     }
 }
