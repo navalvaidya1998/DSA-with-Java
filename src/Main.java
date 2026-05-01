@@ -96,7 +96,7 @@ public class Main {
         //--------------------------------------------------------------------------------------
 
         //Day 5: NextPermutation
-        int[] arr9 = {1,2,3};
+        int[] arr9 = {4,5,6,3,2,1};
         System.out.println("Day 5 - NextPermutation ==> Original Array: " + java.util.Arrays.toString(arr9));
         arrays.NextPermutation.nextPermutation(arr9);
         System.out.println("Day 5 - NextPermutation ==> Next Permutation: " + java.util.Arrays.toString(arr9));
