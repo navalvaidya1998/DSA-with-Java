@@ -141,7 +141,7 @@ public class FindFirstandLastPositionofElementinSortedArray {
     *     → last  = lowerBound(target + 1) - 1
     *
     * - Validation:
-    *     → If first is out of bounds OR nums[first] != target
+    *     → If first is out of bounds OR arr[first] != target
     *       → target not present → return [-1, -1]
     *
     * Time Complexity: O(log n)
@@ -159,23 +159,19 @@ public class FindFirstandLastPositionofElementinSortedArray {
     * - Slightly less intuitive for beginners
     * - Edge case: target + 1 may overflow (Integer.MAX_VALUE)
     */
-    public static int[] FindFirstandLastPositionofElementinSortedArrayOptimal2(int[] nums, int target) {
-        int first = lowerBound(nums, target);
-        int last = lowerBound(nums, target + 1) - 1;
-
-        if (first == nums.length || nums[first] != target) {
+    public static int[] FindFirstandLastPositionofElementinSortedArrayOptimal2(int[] arr, int target) {
+        int first = lowerBound(arr, target);
+        int last = lowerBound(arr, target + 1) - 1;
+        if (first == arr.length || arr[first] != target) {
             return new int[] {-1, -1};
         }
-
         return new int[] {first, last};
     }
-    private static int lowerBound(int[] nums, int target) {
-        int low = 0, high = nums.length;
-
+    private static int lowerBound(int[] arr, int target) {
+        int low = 0, high = arr.length;
         while (low < high) {
             int mid = low + (high - low) / 2;
-
-            if (nums[mid] < target) {
+            if (arr[mid] < target) {
                 low = mid + 1;
             } else {
                 high = mid;

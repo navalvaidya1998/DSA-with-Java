@@ -108,6 +108,7 @@ public class Main {
         int searchResult1 = arrays.SearchinRotatedSortedArray.searchinRotatedSortedArrayOptimal(arr10, target4);
         System.out.println("Day 5 - SearchinRotatedSortedArray ==> Index of target (Brute Force): " + searchResult);
         System.out.println("Day 5 - SearchinRotatedSortedArray ==> Index of target (Optimal Approach): " + searchResult1);
+        //--------------------------------------------------------------------------------------
 
         //Day 6: FindFirstAndLastPositionOfElementInSortedArray with Brute Force, Optimal Approach and Lower Bound Technique
         int[] arr11 = {5,7,7,8,8,9,9,9,9,9,9,9,10};
@@ -118,5 +119,13 @@ public class Main {
         System.out.println("Day 6 - FindFirstAndLastPositionOfElementInSortedArray ==> First and Last Position (Brute Force): " + java.util.Arrays.toString(findResult));
         System.out.println("Day 6 - FindFirstAndLastPositionOfElementInSortedArray ==> First and Last Position (Optimal Approach): " + java.util.Arrays.toString(findResult1));
         System.out.println("Day 6 - FindFirstAndLastPositionOfElementInSortedArray ==> First and Last Position (Lower Bound Technique): " + java.util.Arrays.toString(findResult2));
+        //Day 6: SearchInsertPosition with Brute Force and Optimal Approach
+        int[] arr12 = {1,2,3,5,6};
+        int target6 = 4;
+        int searchResult2 = arrays.SearchInsertPosition.searchInsertBruteforce(arr12, target6);
+        int searchResult3 = arrays.SearchInsertPosition.searchInsertOptimal(arr12, target6);
+        System.out.println("Day 6 - SearchInsertPosition ==> Index to insert target (Brute Force): " + searchResult2);
+        System.out.println("Day 6 - SearchInsertPosition ==> Index to insert target (Optimal Approach): " + searchResult3);
+        //--------------------------------------------------------------------------------------
     }
 }
