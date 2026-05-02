@@ -96,7 +96,7 @@ public class Main {
         //--------------------------------------------------------------------------------------
 
         //Day 5: NextPermutation
-        int[] arr9 = {4,5,6,3,2,1};
+        int[] arr9 = {1,6,4,3,5,2};
         System.out.println("Day 5 - NextPermutation ==> Original Array: " + java.util.Arrays.toString(arr9));
         arrays.NextPermutation.nextPermutation(arr9);
         System.out.println("Day 5 - NextPermutation ==> Next Permutation: " + java.util.Arrays.toString(arr9));
@@ -108,5 +108,15 @@ public class Main {
         int searchResult1 = arrays.SearchinRotatedSortedArray.searchinRotatedSortedArrayOptimal(arr10, target4);
         System.out.println("Day 5 - SearchinRotatedSortedArray ==> Index of target (Brute Force): " + searchResult);
         System.out.println("Day 5 - SearchinRotatedSortedArray ==> Index of target (Optimal Approach): " + searchResult1);
+
+        //Day 6: FindFirstAndLastPositionOfElementInSortedArray with Brute Force, Optimal Approach and Lower Bound Technique
+        int[] arr11 = {5,7,7,8,8,9,9,9,9,9,9,9,10};
+        int target5 = 9;
+        int[] findResult = arrays.FindFirstandLastPositionofElementinSortedArray.FindFirstandLastPositionofElementinSortedArrayBruteForce(arr11, target5);
+        int[] findResult1 = arrays.FindFirstandLastPositionofElementinSortedArray.FindFirstandLastPositionofElementinSortedArrayOptimal1(arr11, target5);
+        int[] findResult2 = arrays.FindFirstandLastPositionofElementinSortedArray.FindFirstandLastPositionofElementinSortedArrayOptimal2(arr11, target5);
+        System.out.println("Day 6 - FindFirstAndLastPositionOfElementInSortedArray ==> First and Last Position (Brute Force): " + java.util.Arrays.toString(findResult));
+        System.out.println("Day 6 - FindFirstAndLastPositionOfElementInSortedArray ==> First and Last Position (Optimal Approach): " + java.util.Arrays.toString(findResult1));
+        System.out.println("Day 6 - FindFirstAndLastPositionOfElementInSortedArray ==> First and Last Position (Lower Bound Technique): " + java.util.Arrays.toString(findResult2));
     }
 }

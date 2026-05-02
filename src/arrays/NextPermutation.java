@@ -9,7 +9,7 @@ public class NextPermutation {
     * - Instead of generating all permutations, we slightly increase the current arrangement
     *
     * Key Logic:
-    * - Traverse from right and find the first index 'i' such that nums[i] < nums[i+1]
+    * - Traverse from right and find the first index 'i' such that arr[i] < arr[i+1]
     *   → This is called the breakpoint
     *
     * - If no such index exists:
@@ -17,8 +17,8 @@ public class NextPermutation {
     *   → Reverse the entire array to get the smallest permutation
     *
     * - Otherwise:
-    *   → Traverse from right again and find element just greater than nums[i]
-    *   → Swap that element with nums[i]
+    *   → Traverse from right again and find element just greater than arr[i]
+    *   → Swap that element with arr[i]
     *
     * - Finally:
     *   → Reverse the part of the array after index 'i'
