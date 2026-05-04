@@ -160,5 +160,11 @@ public class Main {
         System.out.println("Day 7 - ValidSudoku ==> Is Valid Sudoku (Valid Board): " + isValid1);
         System.out.println("Day 7 - ValidSudoku ==> Is Valid Sudoku (Invalid Board - Optimal): " + isValid2);
         System.out.println("Day 7 - ValidSudoku ==> Is Valid Sudoku (Valid Board - Optimal): " + isValid3);
+
+        //Day 7: CombinationSum with Backtracking Approach
+        int[] arr13 = {1,4,5,7};
+        int target7 = 8;
+        List<List<Integer>> combinations = arrays.CombinationSum.combinationSum(arr13, target7);
+        System.out.println("Day 7 - CombinationSum ==> Combinations that sum to target: " + combinations);
     }
 }
