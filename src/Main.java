@@ -6,6 +6,7 @@ import arrays.MedianOfTwoSortedArrays;
 import arrays.ThreeSum;
 import arrays.ThreeSumClosest;
 import arrays.TwoSum;
+import arrays.ValidSudoku;
 import java.util.List;
 public class Main {
     public static void main(String[] args) {
@@ -127,5 +128,37 @@ public class Main {
         System.out.println("Day 6 - SearchInsertPosition ==> Index to insert target (Brute Force): " + searchResult2);
         System.out.println("Day 6 - SearchInsertPosition ==> Index to insert target (Optimal Approach): " + searchResult3);
         //--------------------------------------------------------------------------------------
+
+        //Day 7: ValidSudoku Brute Force and Optimal Approach
+        char[][] invalidboard = {
+            {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+            {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+            {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+            {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+            {'4', '.', '8', '8', '8', '3', '.', '.', '1'},
+            {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+            {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+            {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+            {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+        };
+        char[][] validBoard = {
+            {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+            {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+            {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+            {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+            {'4', '.', '.', '.', '.', '3', '.', '.', '1'},
+            {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+            {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+            {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+            {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+        };
+        boolean isValid = ValidSudoku.isValidSudokuBruteForce(invalidboard);
+        boolean isValid1 = ValidSudoku.isValidSudokuBruteForce(validBoard);
+        boolean isValid2 = ValidSudoku.isValidSudokuOptimal(invalidboard);
+        boolean isValid3 = ValidSudoku.isValidSudokuOptimal(validBoard);
+        System.out.println("Day 7 - ValidSudoku ==> Is Valid Sudoku (Invalid Board): " + isValid);
+        System.out.println("Day 7 - ValidSudoku ==> Is Valid Sudoku (Valid Board): " + isValid1);
+        System.out.println("Day 7 - ValidSudoku ==> Is Valid Sudoku (Invalid Board - Optimal): " + isValid2);
+        System.out.println("Day 7 - ValidSudoku ==> Is Valid Sudoku (Valid Board - Optimal): " + isValid3);
     }
 }
