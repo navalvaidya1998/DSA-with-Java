@@ -180,7 +180,13 @@ public class Main {
         for (int i = 0; i < 9; i++) {
             System.out.println(java.util.Arrays.toString(validBoard[i]));
         }
-
+        //Day 8: CombinationSumII with Brute Force and Optimal Approach
+        int[] arr14 = {1, 1, 2, 2, 3, 5, 6, 7, 10};
+        int target8 = 7;
+        List<List<Integer>> combinationsBruteForce = arrays.CombinationSumII.combinationSumIIBruteForce(arr14, target8);
+        List<List<Integer>> combinationsIIOptimal = arrays.CombinationSumII.combinationSumIIOptimal(arr14, target8);
+        System.out.println("Day 8 - CombinationSumII ==> Combinations that sum to target (Brute Force): " + combinationsBruteForce);
+        System.out.println("Day 8 - CombinationSumII ==> Combinations that sum to target (Optimal): " + combinationsIIOptimal);
 
     }
 }
