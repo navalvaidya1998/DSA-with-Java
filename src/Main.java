@@ -3,6 +3,7 @@ import arrays.FourSum;
 import arrays.LargestElement;
 import arrays.LongestCommonPrefix;
 import arrays.MedianOfTwoSortedArrays;
+import arrays.SudokuSolver;
 import arrays.ThreeSum;
 import arrays.ThreeSumClosest;
 import arrays.TwoSum;
@@ -166,5 +167,20 @@ public class Main {
         int target7 = 8;
         List<List<Integer>> combinations = arrays.CombinationSum.combinationSum(arr13, target7);
         System.out.println("Day 7 - CombinationSum ==> Combinations that sum to target: " + combinations);
+        //--------------------------------------------------------------------------------------
+
+        //Day 8: SudokuSolver with Backtracking and Optimization Approach
+        SudokuSolver.sudokuSolverBackTrack(validBoard);
+        System.out.println("Day 8 - SudokuSolver ==> Solved Board (Backtracking): ");
+        for (int i = 0; i < 9; i++) {
+            System.out.println(java.util.Arrays.toString(validBoard[i]));
+        }
+        SudokuSolver.sudokuSolverOptimal(validBoard);
+        System.out.println("Day 8 - SudokuSolver ==> Solved Board (Optimal): ");
+        for (int i = 0; i < 9; i++) {
+            System.out.println(java.util.Arrays.toString(validBoard[i]));
+        }
+
+
     }
 }
