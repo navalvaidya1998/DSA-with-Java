@@ -200,5 +200,14 @@ public class Main {
         System.out.println("Day 9 - FirstMissingPositive ==> Missing Positive (Brute Force): " + missingPositive1);
         System.out.println("Day 9 - FirstMissingPositive ==> Missing Positive (Better): " + missingPositive2);
         System.out.println("Day 9 - FirstMissingPositive ==> Missing Positive (Optimal): " + missingPositive3);
+
+        //Day 9: TrappingRainWater with Brute Force, Better and Optimal Approach
+        int[] height1 = {0,1,3,4,2,0,2,1,0,1,3,2,1,2,1,3,2,1,0,1,2,1,0};
+        int waterBruteForce = arrays.TrappingRainWater.trappingRainWaterBruteforce(height1);
+        int waterBetter = arrays.TrappingRainWater.trappingRainWaterBetter(height1);
+        int waterOptimal = arrays.TrappingRainWater.trap(height1);
+        System.out.println("Day 9 - TrappingRainWater ==> Water (Brute Force): " + waterBruteForce);
+        System.out.println("Day 9 - TrappingRainWater ==> Water (Better): " + waterBetter);
+        System.out.println("Day 9 - TrappingRainWater ==> Water (Optimal): " + waterOptimal);
     }
 }
