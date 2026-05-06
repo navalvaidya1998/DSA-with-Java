@@ -187,6 +187,18 @@ public class Main {
         List<List<Integer>> combinationsIIOptimal = arrays.CombinationSumII.combinationSumIIOptimal(arr14, target8);
         System.out.println("Day 8 - CombinationSumII ==> Combinations that sum to target (Brute Force): " + combinationsBruteForce);
         System.out.println("Day 8 - CombinationSumII ==> Combinations that sum to target (Optimal): " + combinationsIIOptimal);
+        
+        //--------------------------------------------------------------------------------------
 
+        //Day 9: FirstMissingPositive with Brute Force, Better and Optimal Approach
+        int[] arr15 = {0, 1, 2, 0, 5, 4};
+        int[] arr16 = {3, 4, -1, 1, 5, 2};
+        int[] arr17 = {7, 8, 9, 11, 12};
+        int missingPositive1 = arrays.FirstMissingPositive.firstMissingPositiveBruteforce(arr15);
+        int missingPositive2 = arrays.FirstMissingPositive.firstMissingPositiveBettter(arr16);
+        int missingPositive3 = arrays.FirstMissingPositive.firstMissingPositiveOptimal(arr17);
+        System.out.println("Day 9 - FirstMissingPositive ==> Missing Positive (Brute Force): " + missingPositive1);
+        System.out.println("Day 9 - FirstMissingPositive ==> Missing Positive (Better): " + missingPositive2);
+        System.out.println("Day 9 - FirstMissingPositive ==> Missing Positive (Optimal): " + missingPositive3);
     }
 }
