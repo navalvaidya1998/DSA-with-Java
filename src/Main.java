@@ -209,5 +209,16 @@ public class Main {
         System.out.println("Day 9 - TrappingRainWater ==> Water (Brute Force): " + waterBruteForce);
         System.out.println("Day 9 - TrappingRainWater ==> Water (Better): " + waterBetter);
         System.out.println("Day 9 - TrappingRainWater ==> Water (Optimal): " + waterOptimal);
+
+        //-------------------------------------------------------------------------------
+
+        //Day 10: JumpGameII with Brute Force, Better and Optimal Approach
+        int[] jumps = {2,3,1,1,4,4,4,5,6};
+        int jumpsBruteForce = arrays.JumpGameII.jumpGame2Bruteforce(jumps);
+        int jumpsBetter = arrays.JumpGameII.jumpGame2Better(jumps);
+        int jumpsOptimal = arrays.JumpGameII.jumpGame2Optimal(jumps);
+        System.out.println("Day 10 - JumpGameII ==> Jumps (Brute Force): " + jumpsBruteForce);
+        System.out.println("Day 10 - JumpGameII ==> Jumps (Better): " + jumpsBetter);
+        System.out.println("Day 10 - JumpGameII ==> Jumps (Optimal): " + jumpsOptimal);
     }
 }
