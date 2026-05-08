@@ -220,5 +220,12 @@ public class Main {
         System.out.println("Day 10 - JumpGameII ==> Jumps (Brute Force): " + jumpsBruteForce);
         System.out.println("Day 10 - JumpGameII ==> Jumps (Better): " + jumpsBetter);
         System.out.println("Day 10 - JumpGameII ==> Jumps (Optimal): " + jumpsOptimal);
+
+        //Day 10: Permutations with Brute Force and Optimal Approach
+        int[] permArr = {1, 2, 3};
+        List<List<Integer>> permutationsBruteForce = arrays.Permutations.permutationsBruteforce(permArr);
+        List<List<Integer>> permutationsOptimal = arrays.Permutations.permutationsOptimal(permArr);
+        System.out.println("Day 10 - Permutations ==> Permutations (Brute Force): " + permutationsBruteForce);
+        System.out.println("Day 10 - Permutations ==> Permutations (Optimal): " + permutationsOptimal);
     }
 }
