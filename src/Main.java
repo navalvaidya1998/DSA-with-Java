@@ -227,5 +227,13 @@ public class Main {
         List<List<Integer>> permutationsOptimal = arrays.Permutations.permutationsOptimal(permArr);
         System.out.println("Day 10 - Permutations ==> Permutations (Brute Force): " + permutationsBruteForce);
         System.out.println("Day 10 - Permutations ==> Permutations (Optimal): " + permutationsOptimal);
+
+        //---------------------------------------------------------------------------------
+
+        //Day 11: PermutationsII with Backtracking Approach
+        int[] permArr2 = {1, 1, 2};
+        List<List<Integer>> permutationsII = arrays.PermutationsII.permutations2(permArr2);
+        System.out.println("Day 11 - PermutationsII ==> Permutations (Backtracking): " + permutationsII);
+        
     }
 }
