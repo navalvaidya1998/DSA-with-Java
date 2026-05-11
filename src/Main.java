@@ -235,5 +235,28 @@ public class Main {
         List<List<Integer>> permutationsII = arrays.PermutationsII.permutations2(permArr2);
         System.out.println("Day 11 - PermutationsII ==> Permutations (Backtracking): " + permutationsII);
         
+        //---------------------------------------------------------------------------------
+
+        //Day 12: RotateImage with Brute Force and Optimal Approach
+        int[][] matrix = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        System.out.println("Day 12 - RotateImage ==> Original Matrix:");
+        for (int[] matrix1 : matrix) {
+            System.out.println(java.util.Arrays.toString(matrix1));
+        }  
+        arrays.RotateImage.rotateImageBruteforce(matrix);
+        System.out.println("Day 12 - RotateImage ==> Rotated Matrix (Brute Force):");
+        for (int[] matrix1 : matrix) {
+            System.out.println(java.util.Arrays.toString(matrix1));
+        }  
+        arrays.RotateImage.rotateImageOptimal(matrix);
+        System.out.println("Day 12 - RotateImage ==> Rotated Matrix (Optimal):");
+        for (int[] matrix1 : matrix) {
+            System.out.println(java.util.Arrays.toString(matrix1));
+        }
+
     }
 }
