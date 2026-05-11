@@ -258,5 +258,12 @@ public class Main {
             System.out.println(java.util.Arrays.toString(matrix1));
         }
 
+        //Day 12: GroupAnagrams with Optimal Approach
+        String[] anagrams = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        List<List<String>> groupedAnagrams = arrays.GroupAnagrams.groupAnagrams(anagrams);
+        System.out.println("Day 12 - GroupAnagrams ==> Grouped Anagrams (Optimal): " + groupedAnagrams);
+
+        //---------------------------------------------------------------------------------
+
     }
 }
