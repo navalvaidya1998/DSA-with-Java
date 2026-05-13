@@ -265,5 +265,10 @@ public class Main {
 
         //---------------------------------------------------------------------------------
 
+        //Day 13: NQueens with Brute Force and Optimal Approaches
+        List<List<String>> nQueensBruteForce = arrays.NQueens.nQueensBruteforce(4);
+        List<List<String>> nQueensOptimal = arrays.NQueens.nQueensOptimal(4);
+        System.out.println("Day 13 - NQueens ==> Solutions (Brute Force): " + nQueensBruteForce);
+        System.out.println("Day 13 - NQueens ==> Solutions (Optimal): " + nQueensOptimal);
     }
 }
