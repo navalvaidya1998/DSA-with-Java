@@ -270,5 +270,12 @@ public class Main {
         List<List<String>> nQueensOptimal = arrays.NQueens.nQueensOptimal(4);
         System.out.println("Day 13 - NQueens ==> Solutions (Brute Force): " + nQueensBruteForce);
         System.out.println("Day 13 - NQueens ==> Solutions (Optimal): " + nQueensOptimal);
+
+        //Day 14: LongestSubstringWithoutRepeatingCharacters with Brute Force and Optimal Approaches
+        String s = "abcabcbb";
+        int longestSubstringBruteForce = string.LongestSubstringWithoutRepeatingCharacters.longestSubstringWithoutRepeatingCharactersBruteforce(s);
+        int longestSubstringOptimal = string.LongestSubstringWithoutRepeatingCharacters.longestSubstringWithoutRepeatingCharactersOptimal(s);
+        System.out.println("Day 14 - LongestSubstringWithoutRepeatingCharacters ==> Length (Brute Force): " + longestSubstringBruteForce);
+        System.out.println("Day 14 - LongestSubstringWithoutRepeatingCharacters ==> Length (Optimal): " + longestSubstringOptimal);
     }
 }
