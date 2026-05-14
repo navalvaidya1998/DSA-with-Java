@@ -277,5 +277,14 @@ public class Main {
         int longestSubstringOptimal = string.LongestSubstringWithoutRepeatingCharacters.longestSubstringWithoutRepeatingCharactersOptimal(s);
         System.out.println("Day 14 - LongestSubstringWithoutRepeatingCharacters ==> Length (Brute Force): " + longestSubstringBruteForce);
         System.out.println("Day 14 - LongestSubstringWithoutRepeatingCharacters ==> Length (Optimal): " + longestSubstringOptimal);
+
+        //Day 14: LongestPalindromicSubstring with Brute Force, Better and Optimal Approach
+        String s1 = "babad";
+        String longestPalindromeBruteForce = string.LongestPalindromicSubstring.longestPalindromicSubstringBruteforce(s1);
+        String longestPalindromeBetter = string.LongestPalindromicSubstring.longestPalindromicSubstringBetter(s1);
+        String longestPalindromeOptimal = string.LongestPalindromicSubstring.longestPalindromicSubstringOptimal(s1);
+        System.out.println("Day 14 - LongestPalindromicSubstring ==> Longest Palindrome (Brute Force): " + longestPalindromeBruteForce);
+        System.out.println("Day 14 - LongestPalindromicSubstring ==> Longest Palindrome (Better): " + longestPalindromeBetter);
+        System.out.println("Day 14 - LongestPalindromicSubstring ==> Longest Palindrome (Optimal): " + longestPalindromeOptimal);
     }
 }
