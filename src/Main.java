@@ -286,5 +286,12 @@ public class Main {
         System.out.println("Day 14 - LongestPalindromicSubstring ==> Longest Palindrome (Brute Force): " + longestPalindromeBruteForce);
         System.out.println("Day 14 - LongestPalindromicSubstring ==> Longest Palindrome (Better): " + longestPalindromeBetter);
         System.out.println("Day 14 - LongestPalindromicSubstring ==> Longest Palindrome (Optimal): " + longestPalindromeOptimal);
+
+        //----------------------------------------------------------------------------------
+
+        //Day 15: ZigzagConversion with Optimal Approach
+        String s2 = "PAYPALISHIRING";
+        String zigzagResult = string.ZigzagConversion.zigzagConversionOptimal(s2, 3);
+        System.out.println("Day 15 - ZigzagConversion ==> Zigzag Conversion (Optimal): " + zigzagResult);
     }
 }
