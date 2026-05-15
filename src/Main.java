@@ -293,5 +293,12 @@ public class Main {
         String s2 = "PAYPALISHIRING";
         String zigzagResult = string.ZigzagConversion.zigzagConversionOptimal(s2, 3);
         System.out.println("Day 15 - ZigzagConversion ==> Zigzag Conversion (Optimal): " + zigzagResult);
+
+        //Day 15: StringToInteger with Optimal Approach
+        String s3 = "42";
+        int atoiResult = string.StringToIntegerAtoi.stringToIntegerAtoiOptimal(s3);
+        System.out.println("Day 15 - StringToInteger ==> Integer Value (Optimal): " + atoiResult);
+
+        //=---------------------------------------------------------------------------------
     }
 }
