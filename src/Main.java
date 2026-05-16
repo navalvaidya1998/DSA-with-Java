@@ -300,5 +300,9 @@ public class Main {
         System.out.println("Day 15 - StringToInteger ==> Integer Value (Optimal): " + atoiResult);
 
         //=---------------------------------------------------------------------------------
+
+        // Day 16: RegularExpressionMatching with Optimal Approach
+        boolean isMatch = string.RegularExpressionMatching.regularExpressionMatchingOptimal("abb", "ab*");
+        System.out.println("Day 16 - RegularExpressionMatching ==> Is Match (Optimal): " + isMatch);
     }
 }
