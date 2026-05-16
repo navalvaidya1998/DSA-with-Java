@@ -304,5 +304,9 @@ public class Main {
         // Day 16: RegularExpressionMatching with Optimal Approach
         boolean isMatch = string.RegularExpressionMatching.regularExpressionMatchingOptimal("abb", "ab*");
         System.out.println("Day 16 - RegularExpressionMatching ==> Is Match (Optimal): " + isMatch);
+
+        // Day 16: IntegerToRoman with Optimal Approach
+        String romanNumeral = string.IntegerToRoman.integerToRomanOptimal(1994);
+        System.out.println("Day 16 - IntegerToRoman ==> Roman Numeral (Optimal): " + romanNumeral);
     }
 }
