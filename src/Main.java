@@ -308,5 +308,11 @@ public class Main {
         // Day 16: IntegerToRoman with Optimal Approach
         String romanNumeral = string.IntegerToRoman.integerToRomanOptimal(1994);
         System.out.println("Day 16 - IntegerToRoman ==> Roman Numeral (Optimal): " + romanNumeral);
+
+        //----------------------------------------------------------------------------------
+
+        //Day 17: RomanToInteger with Optimal Approach
+        int integerValue = string.RomanToInteger.romanToIntegerOptimal("MCMXCIV");
+        System.out.println("Day 17 - RomanToInteger ==> Integer Value (Optimal): " + integerValue);
     }
 }
