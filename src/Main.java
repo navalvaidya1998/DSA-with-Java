@@ -314,5 +314,9 @@ public class Main {
         //Day 17: RomanToInteger with Optimal Approach
         int integerValue = string.RomanToInteger.romanToIntegerOptimal("MCMXCIV");
         System.out.println("Day 17 - RomanToInteger ==> Integer Value (Optimal): " + integerValue);
+
+        //Day 17: LetterCombinationsOfAPhoneNumber with Optimal Approach
+        List<String> combinationsPhoneNumber = string.LetterCombinationsOfAPhoneNumber.letterCombinationsOfAPhoneNumberOptimal("23");
+        System.out.println("Day 17 - LetterCombinationsOfAPhoneNumber ==> Combinations (Optimal): " + combinationsPhoneNumber);
     }
 }
