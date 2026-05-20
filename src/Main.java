@@ -324,5 +324,9 @@ public class Main {
         //Day 18: ValidParentheses with Optimal Approach
         boolean isValidParentheses = string.ValidParentheses.validParenthesesOptimal("()[]{}");
         System.out.println("Day 18 - ValidParentheses ==> Is Valid (Optimal): " + isValidParentheses);
+
+        //Day 18: GenerateParentheses with Optimal Approach
+        List<String> parenthesesCombinations = string.GenerateParentheses.generateParenthesesOptimal(3);
+        System.out.println("Day 18 - GenerateParentheses ==> Combinations (Optimal): " + parenthesesCombinations);
     }
 }
