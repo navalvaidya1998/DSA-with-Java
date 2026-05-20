@@ -318,5 +318,11 @@ public class Main {
         //Day 17: LetterCombinationsOfAPhoneNumber with Optimal Approach
         List<String> combinationsPhoneNumber = string.LetterCombinationsOfAPhoneNumber.letterCombinationsOfAPhoneNumberOptimal("23");
         System.out.println("Day 17 - LetterCombinationsOfAPhoneNumber ==> Combinations (Optimal): " + combinationsPhoneNumber);
+
+        //----------------------------------------------------------------------------------
+
+        //Day 18: ValidParentheses with Optimal Approach
+        boolean isValidParentheses = string.ValidParentheses.validParenthesesOptimal("()[]{}");
+        System.out.println("Day 18 - ValidParentheses ==> Is Valid (Optimal): " + isValidParentheses);
     }
 }
