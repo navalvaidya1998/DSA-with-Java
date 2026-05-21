@@ -342,5 +342,7 @@ public class Main {
         String[] words = {"foo", "bar"};
         List<Integer> substringIndices = string.SubstringWithConcatenationOfAllWords.substringWithConcatenationOfAllWordsOptimal(s4, words);
         System.out.println("Day 19 - SubstringWithConcatenationOfAllWords ==> Indices (Optimal): " + substringIndices);
+
+        //----------------------------------------------------------------------------------
     }
 }
