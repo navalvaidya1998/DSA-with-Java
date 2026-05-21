@@ -328,5 +328,13 @@ public class Main {
         //Day 18: GenerateParentheses with Optimal Approach
         List<String> parenthesesCombinations = string.GenerateParentheses.generateParenthesesOptimal(3);
         System.out.println("Day 18 - GenerateParentheses ==> Combinations (Optimal): " + parenthesesCombinations);
+
+        //----------------------------------------------------------------------------------
+
+        //Day 19: FindTheIndexOfTheFirstOccurrenceInAString with Brute Force and Optimal Approach
+        int indexBruteForce = string.FindTheIndexOfTheFirstOccurrenceInAString.findTheIndexOfTheFirstOccurrenceInAStringBruteforce("hello", "ll");
+        int indexOptimal = string.FindTheIndexOfTheFirstOccurrenceInAString.findTheIndexOfTheFirstOccurrenceInAStringOptimal("hello", "ll");
+        System.out.println("Day 19 - FindTheIndexOfTheFirstOccurrenceInAString ==> Index (Brute Force): " + indexBruteForce);
+        System.out.println("Day 19 - FindTheIndexOfTheFirstOccurrenceInAString ==> Index (Optimal): " + indexOptimal);
     }
 }
