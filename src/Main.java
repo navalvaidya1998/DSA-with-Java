@@ -336,5 +336,11 @@ public class Main {
         int indexOptimal = string.FindTheIndexOfTheFirstOccurrenceInAString.findTheIndexOfTheFirstOccurrenceInAStringOptimal("hello", "ll");
         System.out.println("Day 19 - FindTheIndexOfTheFirstOccurrenceInAString ==> Index (Brute Force): " + indexBruteForce);
         System.out.println("Day 19 - FindTheIndexOfTheFirstOccurrenceInAString ==> Index (Optimal): " + indexOptimal);
+
+        //Day 19: SubstringWithConcatenationOfAllWords with Optimal Approach
+        String s4 = "barfoothefoobarman";
+        String[] words = {"foo", "bar"};
+        List<Integer> substringIndices = string.SubstringWithConcatenationOfAllWords.substringWithConcatenationOfAllWordsOptimal(s4, words);
+        System.out.println("Day 19 - SubstringWithConcatenationOfAllWords ==> Indices (Optimal): " + substringIndices);
     }
 }
