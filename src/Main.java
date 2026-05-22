@@ -344,5 +344,12 @@ public class Main {
         System.out.println("Day 19 - SubstringWithConcatenationOfAllWords ==> Indices (Optimal): " + substringIndices);
 
         //----------------------------------------------------------------------------------
+
+        //Day 20: LongestValidParentheses with Brute Force and Optimal Approach
+        String s5 = "(()())";
+        int longestValidParenthesesBruteForce = string.LongestValidParentheses.longestValidParenthesesBruteforce(s5);
+        int longestValidParenthesesOptimal = string.LongestValidParentheses.longestValidParenthesesOptimal(s5);
+        System.out.println("Day 20 - LongestValidParentheses ==> Length (Brute Force): " + longestValidParenthesesBruteForce);
+        System.out.println("Day 20 - LongestValidParentheses ==> Length (Optimal): " + longestValidParenthesesOptimal);
     }
 }
