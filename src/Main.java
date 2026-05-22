@@ -351,5 +351,9 @@ public class Main {
         int longestValidParenthesesOptimal = string.LongestValidParentheses.longestValidParenthesesOptimal(s5);
         System.out.println("Day 20 - LongestValidParentheses ==> Length (Brute Force): " + longestValidParenthesesBruteForce);
         System.out.println("Day 20 - LongestValidParentheses ==> Length (Optimal): " + longestValidParenthesesOptimal);
+
+        //Day 20: CountAndSay with Optimal Approach
+        String countAndSayResult = string.CountAndSay.countAndSayOptimal(5);
+        System.out.println("Day 20 - CountAndSay ==> Result (Optimal): " + countAndSayResult);
     }
 }
