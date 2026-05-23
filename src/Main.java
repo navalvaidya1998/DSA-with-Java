@@ -355,5 +355,15 @@ public class Main {
         //Day 20: CountAndSay with Optimal Approach
         String countAndSayResult = string.CountAndSay.countAndSayOptimal(5);
         System.out.println("Day 20 - CountAndSay ==> Result (Optimal): " + countAndSayResult);
+
+        //----------------------------------------------------------------------------------
+
+        //Day 21: MultiplyStrings with Brute Force and Optimal Approach
+        String num1 = "123";
+        String num2 = "456";
+        String multiplyStringsBruteForce = string.MultiplyStrings.multiplyStringsBruteforce(num1, num2);
+        String multiplyStringsOptimal = string.MultiplyStrings.multiplyStringsOptimal(num1, num2);
+        System.out.println("Day 21 - MultiplyStrings ==> Result (Brute Force): " + multiplyStringsBruteForce);
+        System.out.println("Day 21 - MultiplyStrings ==> Result (Optimal): " + multiplyStringsOptimal);
     }
 }
