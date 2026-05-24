@@ -365,5 +365,15 @@ public class Main {
         String multiplyStringsOptimal = string.MultiplyStrings.multiplyStringsOptimal(num1, num2);
         System.out.println("Day 21 - MultiplyStrings ==> Result (Brute Force): " + multiplyStringsBruteForce);
         System.out.println("Day 21 - MultiplyStrings ==> Result (Optimal): " + multiplyStringsOptimal);
+
+        //----------------------------------------------------------------------------------
+
+        //Day 22: WildcardMatching with Brute Force and Optimal Approach
+        String s6 = "adceb";
+        String p6 = "*a*b*";
+        boolean wildcardMatchingBruteForce = string.WildcardMatching.wildcardMatchingBruteforce(s6, p6);
+        boolean wildcardMatchingOptimal = string.WildcardMatching.wildcardMatchingOptimal(s6, p6);
+        System.out.println("Day 22 - WildcardMatching ==> Match (Brute Force): " + wildcardMatchingBruteForce);
+        System.out.println("Day 22 - WildcardMatching ==> Match (Optimal): " + wildcardMatchingOptimal);
     }
 }
