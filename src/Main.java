@@ -375,5 +375,15 @@ public class Main {
         boolean wildcardMatchingOptimal = string.WildcardMatching.wildcardMatchingOptimal(s6, p6);
         System.out.println("Day 22 - WildcardMatching ==> Match (Brute Force): " + wildcardMatchingBruteForce);
         System.out.println("Day 22 - WildcardMatching ==> Match (Optimal): " + wildcardMatchingOptimal);
+
+        //----------------------------------------------------------------------------------
+
+        //Day 23: LengthOfLastWord with Brute Force and Optimal Approach
+        String s7 = "Hello World   ";
+        int lengthOfLastWordBruteForce = string.LengthOfLastWord.lengthOfLastWordBruteforce(s7);
+        int lengthOfLastWordOptimal = string.LengthOfLastWord.lengthOfLastWordOptimal(s7);
+        System.out.println("Day 23 - LengthOfLastWord ==> Length (Brute Force): " + lengthOfLastWordBruteForce);
+        System.out.println("Day 23 - LengthOfLastWord ==> Length (Optimal): " + lengthOfLastWordOptimal);
+
     }
 }
