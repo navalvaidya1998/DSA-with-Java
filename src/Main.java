@@ -385,5 +385,20 @@ public class Main {
         System.out.println("Day 23 - LengthOfLastWord ==> Length (Brute Force): " + lengthOfLastWordBruteForce);
         System.out.println("Day 23 - LengthOfLastWord ==> Length (Optimal): " + lengthOfLastWordOptimal);
 
+        //Day 23: ValidNumber with Brute Force and Optimal Approach
+        String s8 = "0.1";
+        boolean validNumberBruteForce = string.ValidNumber.validNumberBruteforce(s8);
+        boolean validNumberOptimal = string.ValidNumber.validNumberOptimal(s8);
+        System.out.println("Day 23 - ValidNumber ==> Valid (Brute Force): " + validNumberBruteForce);
+        System.out.println("Day 23 - ValidNumber ==> Valid (Optimal): " + validNumberOptimal);
+
+        //----------------------------------------------------------------------------------
+
+        //Day 24: TextJustification with Brute Force and Optimal Approach
+        String[] words2 = {"This", "is", "an", "example", "of", "text", "justification."};
+        int maxWidth = 16;
+        List<String> textJustificationResult = string.TextJustification.textJustificationOptimal(words2, maxWidth);
+        System.out.println("Day 24 - TextJustification ==> Result (Optimal): " + textJustificationResult);
+
     }
 }
