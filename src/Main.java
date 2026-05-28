@@ -410,5 +410,12 @@ public class Main {
         System.out.println("Day 25 - AddBinary ==> Result (Brute Force): " + addBinaryBruteForce);
         System.out.println("Day 25 - AddBinary ==> Result (Optimal): " + addBinaryOptimal);
 
+        //Day 25: SimplifyPath with Brute Force and Optimal Approach
+        String path = "/a/./b/../../c/";
+        String simplifyPathBruteForce = string.SimplifyPath.simplifyPathBruteforce(path);
+        String simplifyPathOptimal = string.SimplifyPath.simplifyPathOptimal(path);
+        System.out.println("Day 25 - SimplifyPath ==> Result (Brute Force): " + simplifyPathBruteForce);
+        System.out.println("Day 25 - SimplifyPath ==> Result (Optimal): " + simplifyPathOptimal);
+
     }
 }
