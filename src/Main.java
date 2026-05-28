@@ -400,5 +400,15 @@ public class Main {
         List<String> textJustificationResult = string.TextJustification.textJustificationOptimal(words2, maxWidth);
         System.out.println("Day 24 - TextJustification ==> Result (Optimal): " + textJustificationResult);
 
+        //----------------------------------------------------------------------------------
+
+        //Day 25: AddBinary with Brute Force and Optimal Approach
+        String a = "1010";
+        String b = "1011";
+        String addBinaryBruteForce = string.AddBinary.addBinaryBruteforce(a, b);
+        String addBinaryOptimal = string.AddBinary.addBinaryOptimal(a, b);
+        System.out.println("Day 25 - AddBinary ==> Result (Brute Force): " + addBinaryBruteForce);
+        System.out.println("Day 25 - AddBinary ==> Result (Optimal): " + addBinaryOptimal);
+
     }
 }
