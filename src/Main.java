@@ -417,5 +417,15 @@ public class Main {
         System.out.println("Day 25 - SimplifyPath ==> Result (Brute Force): " + simplifyPathBruteForce);
         System.out.println("Day 25 - SimplifyPath ==> Result (Optimal): " + simplifyPathOptimal);
 
+        //----------------------------------------------------------------------------------
+
+        //Day 26: EditDistance with Brute Force and Optimal Approach
+        String word1 = "horse";
+        String word2 = "ros";
+        int editDistanceBruteForce = string.EditDistance.editDistanceBruteforce(word1, word2);
+        int editDistanceOptimal = string.EditDistance.editDistanceOptimal(word1, word2);
+        System.out.println("Day 26 - EditDistance ==> Distance (Brute Force): " + editDistanceBruteForce);
+        System.out.println("Day 26 - EditDistance ==> Distance (Optimal): " + editDistanceOptimal);
+
     }
 }
