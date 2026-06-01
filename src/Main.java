@@ -427,5 +427,15 @@ public class Main {
         System.out.println("Day 26 - EditDistance ==> Distance (Brute Force): " + editDistanceBruteForce);
         System.out.println("Day 26 - EditDistance ==> Distance (Optimal): " + editDistanceOptimal);
 
+        //Day 26:MinimumWindowSubstring with Brute Force and Optimal Approach
+        String s9 = "ADOBECODEBANC";
+        String t9 = "ABC";
+        String minimumWindowSubstringBruteForce = string.MinimumWindowSubstring.minimumWindowSubstringBruteforce(s9, t9);
+        String minimumWindowSubstringOptimal = string.MinimumWindowSubstring.minimumWindowSubstringOptimal(s9, t9);
+        System.out.println("Day 26 - MinimumWindowSubstring ==> Window (Brute Force): " + minimumWindowSubstringBruteForce);
+        System.out.println("Day 26 - MinimumWindowSubstring ==> Window (Optimal): " + minimumWindowSubstringOptimal);
+
+        //----------------------------------------------------------------------------------
+
     }
 }
