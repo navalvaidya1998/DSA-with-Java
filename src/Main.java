@@ -437,5 +437,18 @@ public class Main {
 
         //----------------------------------------------------------------------------------
 
+        //Day 27: SetMatrixZeroes with Brute Force and Optimal Approach
+        int[][] matrix2 = {
+            {1, 1, 1},
+            {1, 0, 1},
+            {1, 1, 1}
+        };
+        string.SetMatrixZeroes.setMatrixZeroesBruteforce(matrix2);
+        string.SetMatrixZeroes.setMatrixZeroesOptimal(matrix2); 
+        System.out.println("Day 27 - SetMatrixZeroes ==> Matrix after setting zeroes:");
+        for (int[] row : matrix2) {
+            System.out.println(java.util.Arrays.toString(row));
+        }
+
     }
 }
