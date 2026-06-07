@@ -450,5 +450,17 @@ public class Main {
             System.out.println(java.util.Arrays.toString(row));
         }
 
+        //----------------------------------------------------------------------------------
+
+        //Day 28: ConstructBinaryTreeFromPreorderAndInorderTraversal with Brute Force and Optimal Approach
+        int[] preorder = {3, 9, 20, 15, 7};
+        int[] inorder = {9, 3, 15, 20, 7};
+        hashtable.ConstructBinaryTreeFromPreorderAndInorderTraversal.TreeNode rootBruteForce = hashtable.ConstructBinaryTreeFromPreorderAndInorderTraversal.constructBinaryTreeFromPreorderAndInorderTraversalBruteforce(preorder, inorder);
+        hashtable.ConstructBinaryTreeFromPreorderAndInorderTraversal.TreeNode rootOptimal = hashtable.ConstructBinaryTreeFromPreorderAndInorderTraversal.constructBinaryTreeFromPreorderAndInorderTraversalOptimal(preorder, inorder);
+        System.out.println("Day 28 - ConstructBinaryTreeFromPreorderAndInorderTraversal ==> Tree constructed (Brute Force): " + rootBruteForce);
+        System.out.println("Day 28 - ConstructBinaryTreeFromPreorderAndInorderTraversal ==> Tree constructed (Optimal): " + rootOptimal);   
+
+
+
     }
 }
