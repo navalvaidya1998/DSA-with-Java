@@ -8,6 +8,7 @@ import arrays.ThreeSum;
 import arrays.ThreeSumClosest;
 import arrays.TwoSum;
 import arrays.ValidSudoku;
+import java.util.Arrays;
 import java.util.List;
 public class Main {
     public static void main(String[] args) {
@@ -460,7 +461,14 @@ public class Main {
         System.out.println("Day 28 - ConstructBinaryTreeFromPreorderAndInorderTraversal ==> Tree constructed (Brute Force): " + rootBruteForce);
         System.out.println("Day 28 - ConstructBinaryTreeFromPreorderAndInorderTraversal ==> Tree constructed (Optimal): " + rootOptimal);   
 
+        //----------------------------------------------------------------------------------
 
+         //Day 29: WordLadder with Optimal Approach
+         String beginWord = "hit";
+         String endWord = "cog";
+         List<String> wordList = Arrays.asList("hot", "dot", "dog", "lot", "log", "cog");
+         List<List<String>> wordLadderOptimal = hashtable.WordLadderII.wordLadderIIOptimal(beginWord, endWord, wordList);
+         System.out.println("Day 29 - WordLadder ==> Paths (Optimal): " + wordLadderOptimal);
 
     }
 }
