@@ -470,5 +470,12 @@ public class Main {
          List<List<String>> wordLadderOptimal = hashtable.WordLadderII.wordLadderIIOptimal(beginWord, endWord, wordList);
          System.out.println("Day 29 - WordLadder ==> Paths (Optimal): " + wordLadderOptimal);
 
+         //Day 30: ContructBinaryTreeFromInorderAndPostorderTraversal with Optimal Approach
+         int[] inorder1 = {9, 3, 15, 20, 7};
+         int[] postorder = {9, 15, 7, 20, 3};
+         hashtable.ConstructBinaryTreeFromInorderAndPostorderTraversal.TreeNode rootOptimal1 = hashtable.ConstructBinaryTreeFromInorderAndPostorderTraversal.constructBinaryTreeFromInorderAndPostorderTraversalOptimal(inorder1, postorder);
+         System.out.println("Day 30 - ContructBinaryTreeFromInorderAndPostorderTraversal ==> Tree constructed (Optimal): " + rootOptimal1); 
+         
+
     }
 }
